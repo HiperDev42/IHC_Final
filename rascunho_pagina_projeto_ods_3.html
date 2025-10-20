@@ -5,262 +5,250 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Projeto: Acesso ao Lazer — Pessoas com Lesão Medular (ODS 3)</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .text-custom-accent { color: #64ffda; }
+      .bg-custom-accent { background-color: #64ffda; }
+      .hover\:text-custom-accent:hover { color: #64ffda; }
+      html {
+        scroll-padding-top: 5rem;
+      }
+    </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 antialiased">
-    <header class="bg-white shadow">
+  <body class="bg-gray-900 text-gray-100 antialiased">
+    
+    <header class="fixed top-0 left-0 w-full bg-gray-800 shadow-xl z-10">
       <div
-        class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between"
+        class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
       >
         <div class="flex items-center gap-4">
           <div
-            class="w-12 h-12 rounded-md bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-white font-bold"
+            class="w-10 h-10 rounded-full bg-custom-accent flex items-center justify-center text-gray-900 font-black text-lg"
           >
             ODS
           </div>
           <div>
-            <h1 class="text-xl font-semibold">
-              Acesso ao Lazer para Pessoas com Lesão Medular
+            <h1 class="text-xl font-bold text-gray-50">
+              Acesso ao Lazer
             </h1>
-            <p class="text-sm text-gray-500">
-              Projeto de pesquisa qualitativa — ODS 3: Saúde e Bem‑Estar
+            <p class="text-sm text-gray-400">
+              ODS 3: Saúde e Bem‑Estar
             </p>
           </div>
         </div>
-        <!-- Navegação removida conforme solicitado -->
+        
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#contexto" class="text-gray-300 hover:text-custom-accent transition duration-150">Contexto</a>
+          <a href="#metodologia" class="text-gray-300 hover:text-custom-accent transition duration-150">Metodologia</a>
+          <a href="#analise" class="text-gray-300 hover:text-custom-accent transition duration-150">Análise</a>
+          <a href="#resumo" class="text-gray-300 hover:text-custom-accent transition duration-150">Resumo</a>
+        </nav>
       </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-10">
-      <!-- Hero -->
-      <section class="bg-white rounded-2xl shadow-sm p-8 mb-8">
+    <main class="max-w-6xl mx-auto px-4 py-20 pt-28">
+      
+      <section id="introducao" class="bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 border-t-4 border-custom-accent">
         <div class="md:flex md:items-center md:gap-8">
           <div class="md:flex-1">
-            <h2 class="text-2xl md:text-3xl font-extrabold leading-tight">
+            <h2 class="text-3xl md:text-4xl font-extrabold leading-snug text-custom-accent">
               Garantir saúde e bem‑estar por meio do acesso ao lazer
             </h2>
-            <p class="mt-4 text-gray-600">
+            <p class="mt-4 text-gray-300 text-lg">
               Este projeto investiga as barreiras — físicas, sociais e
               emocionais — que pessoas com lesão medular enfrentam ao tentar
               acessar espaços de lazer. As descobertas servirão para mapear
               necessidades reais e inspirar futuras intervenções sensíveis ao
               usuário.
             </p>
-
-            <!-- Botões removidos conforme solicitado -->
           </div>
-          <div class="mt-6 md:mt-0 md:w-1/3">
+          <div class="mt-8 md:mt-0 md:w-1/3">
             <figure
-              class="bg-gray-100 rounded-lg p-4 flex items-center justify-center h-40"
+              class="bg-gray-700 rounded-xl p-4 flex items-center justify-center h-48 shadow-inner"
             >
               <img
-                src="https://via.placeholder.com/300x180?text=Imagem+placeholder"
-                alt="placeholder"
-                class="max-h-32 object-contain"
+                src="https://via.placeholder.com/300x180?text=Artefato+Chave"
+                alt="Artefato do projeto"
+                class="max-h-full object-contain rounded-md"
               />
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- Grid -->
-      <section class="grid md:grid-cols-2 gap-6">
-        <!-- Contexto -->
-        <article id="contexto" class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Contexto e justificativa</h3>
-          <p class="mt-3 text-gray-600">
-            O Objetivo de Desenvolvimento Sustentável 3 (Saúde e Bem‑Estar)
-            orienta este estudo. O lazer é um componente fundamental para
-            promover saúde mental, social e qualidade de vida — especialmente em
-            processos de reabilitação. No entanto, estruturas urbanas e sociais
-            frequentemente excluem pessoas com deficiência motora.
+      <section id="contexto" class="grid md:grid-cols-3 gap-6 mt-12">
+        
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2">
+          <h3 class="text-xl font-bold text-custom-accent">Contexto e Justificativa</h3>
+          <p class="mt-3 text-gray-300 text-sm">
+            O ODS 3 (Saúde e Bem‑Estar) orienta o estudo, focando o lazer como componente fundamental para promover saúde mental e qualidade de vida. Estruturas sociais e urbanas frequentemente excluem pessoas com deficiência motora, tornando este tema vital para a reabilitação.
           </p>
 
-          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+          <h4 class="mt-4 font-semibold text-gray-200">Domínio e Público-Alvo</h4>
+          <ul class="mt-2 space-y-2 text-sm text-gray-400">
             <li>
-              <strong>Público‑alvo:</strong> pessoas com lesão medular em
-              processo de reabilitação
+              <strong>Tema escolhido:</strong> Acessibilidade e bem-estar em lazer.
             </li>
             <li>
-              <strong>Local das entrevistas:</strong> Clínica de Reabilitação
-              Física Acreditando Brasil
+              <strong>Público‑alvo:</strong> Pessoas com lesão medular em processo de reabilitação.
             </li>
             <li>
-              <strong>Amostra inicial:</strong> 4 entrevistas semiestruturadas
+              <strong>Local das entrevistas:</strong> Clínica de Reabilitação Física Acreditando Brasil.
             </li>
           </ul>
         </article>
 
-        <!-- Objetivos -->
-        <article class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Objetivos específicos</h3>
-          <ol class="mt-3 list-decimal list-inside text-gray-600">
-            <li>
-              Compreender percepções sobre lazer e bem‑estar após lesão medular.
-            </li>
-            <li>Mapear barreiras físicas e sociais em locais de lazer.</li>
-            <li>
-              Identificar emoções, tensões e necessidades não atendidas
-              relacionadas ao acesso ao lazer.
-            </li>
-            <li>
-              Produzir mapas de empatia individuais para guiar fases futuras de
-              pesquisa.
-            </li>
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-custom-accent">Objetivos Específicos</h3>
+          <ol class="mt-3 list-decimal list-inside text-gray-300 space-y-2 text-sm">
+            <li>Compreender percepções sobre lazer e bem‑estar pós‑lesão.</li>
+            <li>Mapear barreiras físicas, sociais e emocionais.</li>
+            <li>Identificar emoções, tensões e necessidades não atendidas.</li>
+            <li>Produzir Mapas de Empatia para guiar futuras fases de pesquisa.</li>
           </ol>
         </article>
+      </section>
 
-        <!-- Metodologia -->
-        <article id="metodologia" class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Metodologia resumida</h3>
-          <p class="mt-3 text-gray-600">
-            Foram realizadas entrevistas semiestruturadas em vídeo, de 10–20
-            minutos, gravadas com consentimento. Cada entrevista será analisada
-            individualmente e convertida em um mapa de empatia (1 mapa = 1
-            entrevista).
-          </p>
-
-          <h4 class="mt-4 font-medium">Procedimentos planejados</h4>
-          <ul class="mt-2 text-sm text-gray-700 space-y-1">
-            <li>
-              Ao menos 2 membros da equipe em cada entrevista (entrevistador +
-              anotador).
-            </li>
-            <li>
-              Registro multimodal: vídeo + anotações + fotos de artefatos
-              relevantes (com permissão).
-            </li>
-            <li>
-              Transcrição manual das gravações em vídeo e análise qualitativa
-              com foco em emoções, tensões e necessidades.
-            </li>
-          </ul>
+      <section class="grid md:grid-cols-3 gap-6 mt-12">
+          
+        <article id="equipe" class="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 class="text-xl font-bold text-custom-accent">Membros da Equipe</h3>
+            <p class="mt-3 text-gray-300 text-sm">Responsabilidades e funções definidas para o projeto:</p>
+            <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                <li><strong class="text-gray-200">Bruna Braga:</strong> Entrevistador Principal</li>
+                <li><strong class="text-gray-200">Lucas Escobar:</strong> Anotador e Registro de Artefatos</li>
+                <li><strong class="text-gray-200">Felipe Kaneshiro:</strong> Análise e Síntese da Entrevista </li>
+                <li><strong class="text-gray-200">Felipe Kelemen:</strong> Unificação e Apresentação dos Resultados</li>
+            </ul>
         </article>
 
-        <!-- Ética -->
-        <article id="etica" class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Ética e consentimento</h3>
-          <p class="mt-3 text-gray-600">
-            Os participantes assinaram termo de consentimento que garante
-            anonimato e possibilidade de interromper a qualquer momento. O
-            projeto compromete‑se a respeitar o tempo e a carga emocional dos
-            entrevistados e a compartilhar resultados ao final do semestre.
-          </p>
+        <article id="metodologia" class="bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2">
+          <h3 class="text-xl font-bold text-custom-accent">Metodologia de Identificação de Necessidades</h3>
+          
+          <div class="mt-4 text-sm text-gray-300 space-y-4">
+            
+            <div>
+              <h4 class="font-semibold text-gray-200 mb-1">Participantes e Usuário Extremo</h4>
+              <ul class="list-disc list-inside space-y-1 text-gray-400 ml-4">
+        <li>
+          <strong>Escolha/Apropriação:</strong> Indivíduos em reabilitação (vivência recente das barreiras).
+        </li>
+        <li>
+          <strong>Recrutamento:</strong> Via Clínica Acreditando Brasil (amostra de conveniência).
+        </li>
+        <li>
+          <strong>Usuário Extremo:</strong> [Nome do Participante Extremo], extremo no eixo: <strong>[Eixo - Ex: Fadiga Decisória]</strong>.
+        </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-gray-200 mb-2">Roteiro Principal de Perguntas</h4>
+              <ol class="list-decimal list-inside space-y-1 text-gray-400 ml-4 text-sm lg:text-base">
+                <li>Quais são os pontos mais afetados no dia a dia devido a debilitação ?</li>
+                <li>Quais espaços gostaria de frequentar mas não é possivel devido a acessibilidade ?</li>
+                <li>Quais são os seus lazeres no tempo livre ? Existe algum lazer que não realiza devido a lesão ?</li>
+                <li>Você tem contato com pessoas em situações semelhantes ?</li>
+                <li>Você participa de algum grupo de acolhimento ? Você considera importante esse tipo de espaço para você ?</li>
+              </ol>
+            </div>
 
-          <h4 class="mt-4 font-medium">Como cuidamos das pessoas</h4>
-          <ul class="mt-2 text-sm text-gray-700 space-y-1">
-            <li>Ambiente confortável e familiar (clínica).</li>
-            <li>Opção de não responder perguntas sensíveis.</li>
-            <li>
-              Contato posterior para feedback e entrega de resumo dos achados.
-            </li>
-          </ul>
+            <div>
+              <h4 class="font-semibold text-gray-200 mb-1">Como Registramos (Aparelho e Funções)</h4>
+              <ul class="list-disc list-inside space-y-1 text-gray-400 ml-4">
+                <li>
+                    **Aparelho:** Vídeo (smartphone / câmera) e transcrição manual para análise.
+                </li>
+                <li>
+                    **Registro:** Anotações em campo (feito pelo anotador) e fotos de cadeiras de rodas, acessos e placas informativas (com permissão do entrevistado).
+                </li>
+                <li>
+                    **Funções:** 2 membros/entrevista (Entrevistador Principal e Anotador/Registro de Artefatos).
+                </li>
+              </ul>
+              <h4 class="font-semibold text-gray-200 mt-3 mb-1">Conduta Ética</h4>
+              <p class="text-gray-400 ml-4">
+                  Termo de consentimento assinado, garantindo anonimato e a opção de interromper a entrevista a qualquer momento.
+              </p>
+            </div>
+
+          </div>
         </article>
       </section>
 
-      <!-- Entrevistas e mapa de empatia -->
-      <section id="entrevistas" class="mt-8 bg-white p-6 rounded-lg shadow-sm">
-        <h3 class="text-lg font-semibold">Entrevistas (resumo do processo)</h3>
-        <p class="mt-3 text-gray-600">
-          Quatro entrevistas foram conduzidas — cada uma será transformada em um
-          mapa de empatia individual para capturar o que o entrevistado diz,
-          pensa, sente e faz. (A análise detalhada será adicionada após o
-          recebimento das transcrições.)
+      <section id="analise" class="mt-12 bg-gray-800 p-8 rounded-2xl shadow-xl border-l-4 border-teal-600">
+        <h2 class="text-2xl font-bold text-custom-accent">Resultados, Análise e Insights Chave</h2>
+        <p class="mt-3 text-gray-300 text-lg">
+          A análise das 4 entrevistas e a criação dos Mapas de Empatia revelaram as tensões e necessidades primárias:
         </p>
 
-        <div class="mt-6 grid md:grid-cols-2 gap-4">
-          <!-- cartão exemplo -->
-          <div class="border rounded-lg p-4">
-            <h4 class="font-semibold">Como registramos</h4>
-            <ul class="text-sm mt-2 text-gray-700 space-y-1">
-              <li>Vídeo (smartphone / câmera)</li>
-              <li>Anotações em campo (entrevistador + anotador)</li>
-              <li>
-                Fotos de cadeiras de rodas, acessos, placas informativas (com
-                permissão)
-              </li>
-              <li>Transcrição manual para análise</li>
-            </ul>
-          </div>
-
-          <div class="border rounded-lg p-4">
-            <h4 class="font-semibold">Exemplo de roteiro (inicial)</h4>
-            <ol
-              class="text-sm mt-2 text-gray-700 list-decimal list-inside space-y-1"
-            >
-              <li>
-                Você pode me contar como costuma passar seu tempo livre hoje?
-              </li>
-              <li>
-                Como você se sente quando pensa em ir a parques, praias ou
-                eventos sociais?
-              </li>
-              <li>
-                Quais dificuldades você encontra ao tentar acessar esses
-                lugares?
-              </li>
-              <li>
-                Pode descrever algum momento em que sentiu inclusão ou exclusão
-                em um espaço de lazer?
-              </li>
-              <li>
-                O que você acha que tornaria um local de lazer mais acolhedor
-                para você?
-              </li>
-            </ol>
-          </div>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="md:col-span-2 bg-gray-900 border-l-8 border-pink-500 p-6 rounded-2xl shadow-lg h-56 flex flex-col justify-center">
+              <h3 class="font-semibold text-gray-100 mb-3 text-lg">Citação Principal (O Grande Insight)</h3>
+              <blockquote class="italic text-gray-200 text-lg leading-relaxed mb-2">
+                "Minha percepção de vida e de mundo mudou completamente. Eu posso dizer que pra ele mais ainda."
+              </blockquote>
+            </div>
+            
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md flex flex-col justify-center items-center">
+                <h3 class="font-semibold text-custom-accent">Mapa de Empatia (Destaque)</h3>
+                <p class="text-sm text-gray-400 mt-2 text-center">
+                  O mapa destacou a contradição entre o que o entrevistado <strong>Diz</strong> (ser resiliente) e o que <strong>Sente</strong> (frustração com a dependência).
+                </p>
+                <a href="[LINK_PARA_MAPAS_DE_EMPATIA_COMPLETO]" target="_blank" class="mt-4 inline-block bg-custom-accent text-gray-900 font-bold py-2 px-4 rounded-full text-sm hover:bg-teal-300 transition duration-150">
+                    Ver Mapas e Inferências &rarr;
+                </a>
+            </div>
         </div>
 
-        <p class="text-sm text-gray-500 mt-4">
-          Observação: estas perguntas são apenas um ponto de partida — a equipe
-          seguirá as respostas e aprofunda com "por quê?" e perguntas sobre
-          sentimentos quando relevante.
-        </p>
+        <div class="mt-8">
+            <h3 class="text-xl font-bold text-custom-accent">Insights Principais: Observações e Inferências</h3>
+            <ul class="mt-3 list-disc list-inside text-gray-300 space-y-2 text-md ml-4">
+        <li>
+          <strong>Insight 1 (Observação/Fato):</strong> A <strong>má infraestrutura de SP</strong> nas ruas e espaços de lazer é a principal causa da barreira.
+        </li>
+        <li>
+          <strong>Insight 2 (Inferência):</strong> A consequência direta da má infraestrutura é a <strong>Carga Mental</strong> (Fadiga Decisória) do planejamento, que torna o lazer estressante.
+        </li>
+        <li>
+          <strong>Insight 3 (Necessidade):</strong> A necessidade latente é por <strong>informação de acessibilidade confiável</strong> para reduzir a incerteza e restaurar a espontaneidade na escolha do lazer.
+        </li>
+        <li>
+          <strong>Insight 4 (Aprendizado/Ação):</strong> Soluções devem focar em <strong>reduzir a incerteza da infraestrutura</strong> e não apenas em construir mais rampas (melhorar a informação sobre o que já existe).
+        </li>
+            </ul>
+        </div>
       </section>
 
-      <!-- Próximos passos e contato -->
-      <section id="contato" class="mt-8 grid md:grid-cols-2 gap-6">
-        <article class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Próximos passos</h3>
-          <ul
-            class="mt-3 text-gray-600 list-disc list-inside space-y-1 text-sm"
-          >
-            <li>
-              Analisar transcrições das gravações em vídeo e completar mapas de
-              empatia individuais.
-            </li>
-            <li>
-              Extrair insights: tensões, contradições e necessidades
-              prioritárias.
-            </li>
-            <li>
-              Preparar resumo para os participantes e para a entrega final do
-              semestre.
-            </li>
+      <section id="resumo" class="mt-12 grid md:grid-cols-3 gap-6">
+        
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg md:col-span-2">
+          <h3 class="text-xl font-bold text-custom-accent">Resumo e Aprendizados Principais</h3>
+          <p class="mt-3 text-gray-300 text-sm">
+            O estudo confirmou que o acesso ao lazer é uma questão de **dignidade e autonomia**, não apenas de infraestrutura. O foco no usuário extremo permitiu que as barreiras emocionais (causadas pela má infraestrutura) fossem identificadas como o principal ponto de dor.
+          </p>
+
+          <h4 class="mt-4 font-semibold text-gray-200">Entregáveis (Apêndice)</h4>
+          <ul class="mt-2 text-sm text-gray-400 space-y-1">
+            <li><a href="[LINK_PARA_APRESENTACAO_PDF]" target="_blank" class="text-teal-400 hover:text-white">Apresentação Completa em PDF</a></li>
+            <li><a href="[LINK_PARA_FORMULARIOS_DE_CONSENTIMENTO]" target="_blank" class="text-teal-400 hover:text-white">Formulários de Consentimento do Entrevistado</a></li>
+            <li><a href="[LINK_PARA_RELATORIO_DE_TRANSCRICAO]" target="_blank" class="text-teal-400 hover:text-white">Relatório de Transcrição Bruta</a></li>
           </ul>
         </article>
 
-        <article class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-lg font-semibold">Equipe & contato</h3>
-          <p class="mt-2 text-sm text-gray-700">
-            Adicione aqui os nomes dos integrantes do grupo, e-mail
-            institucional e um canal para devolutiva (por exemplo, e-mail ou
-            WhatsApp profissional).
-          </p>
-
-          <div class="mt-4 text-sm text-gray-600">
-            <p><strong>Clínica parceira:</strong> Acreditando Brasil</p>
-            <p class="mt-2">
-              Se desejar, insira um link para o termo de consentimento e para os
-              arquivos das transcrições (armazenados em Drive/OneDrive).
-            </p>
-          </div>
+        <article class="bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold text-custom-accent">O que vem a seguir?</h3>
+          <ul class="mt-3 text-gray-300 list-disc list-inside space-y-2 text-md ml-4">
+            <li>Desenvolver **Personas** detalhadas a partir dos Mapas.</li>
+            <li>Realizar **sessão de ideação** para a solução (fase de design).</li>
+            <li>Validar o **MVP** com os participantes.</li>
+          </ul>
         </article>
       </section>
+
 
       <footer class="mt-12 text-center text-sm text-gray-500">
         <p>
-          Rascunho — página gerada para apresentação do projeto. Conteúdo
-          sujeito a atualização após análise das entrevistas.
+          Página de Apresentação Final para [Nome da Disciplina] | Equipe [Nome da Equipe].
         </p>
       </footer>
     </main>
